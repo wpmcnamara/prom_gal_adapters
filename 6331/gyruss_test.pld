@@ -1,0 +1,67 @@
+Name 32x8prom;
+Partno 32x8prom;
+Date 08/03/2024;
+Revision 01;
+Designer Patrick McNamara;
+Company None;
+Assembly None;
+Location None;
+Device g22v10;
+
+
+/** Inputs **/
+
+
+Pin 2 = A4;
+Pin 3 = A3;
+Pin 4 = A2;
+Pin 5 = A1;
+Pin 6 = A0;
+Pin 1 = EN;
+
+/** Outputs **/
+
+Pin [15..22] = [O0..7];
+
+
+/** Declarations and Intermediate Variable Definitions **/
+
+field byte = [O0..7];
+field address = [A4..0];
+
+byte.oe = !EN;
+
+table address => byte {
+0 => 00;
+1 => 07;
+2 => 3f;
+3 => 38;
+4 => f8;
+5 => e8;
+6 => d8;
+7 => 90;
+8 => 27;
+9 => 1e;
+a => 15;
+b => 0c;
+c => ad;
+d => a4;
+e => 5b;
+f => ff;
+10 => 00;
+11 => 37;
+12 => 2e;
+13 => 25;
+14 => 1c;
+15 => 13;
+16 => 15;
+17 => 0c;
+18 => 03;
+19 => 02;
+1a => 60;
+1b => b0;
+1c => 58;
+1d => f6;
+1e => a4;
+1f => 52;
+}

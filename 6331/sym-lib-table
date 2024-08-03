@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ATF22V10C-10PU")(type "KiCad")(uri "/home/mcnamara/scm/git/prom_gal_adapters/GALs/ATF22V10C-10PU/ATF22V10C-10PU.kicad_sym")(options "")(descr ""))
+)
