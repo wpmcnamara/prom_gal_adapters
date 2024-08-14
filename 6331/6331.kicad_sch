@@ -3,7 +3,12 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "96ddc14c-1b37-4dea-b712-b5c55d124095")
-	(paper "A4")
+	(paper "A")
+	(title_block
+		(title "22V10 to 6331 biPROM")
+		(date "2024-08-03")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "ATF22V10C-10PU:ATF22V10C-10PU"
 			(pin_names
